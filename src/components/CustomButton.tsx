@@ -5,7 +5,7 @@ type Props = {
 }
 export const CustomButtonAddAndClear = ({ label, onClick }: Props) => {
     return (
-        <button onClick={onClick} className="p-2 text-white rounded font-bold bg-gray-500 m-2">
+        <button onClick={onClick} className="p-2 text-white rounded font-bold bg-gray-500 my-2 ml-2">
             {label}
         </button>
     )

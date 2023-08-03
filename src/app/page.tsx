@@ -69,7 +69,7 @@ const Page = () => {
           ))}
         </ul>
 
-        <div className="w-full flex justify-between mt-1 items-center p-1 border-t-2 border-gray-950">
+        <div className="w-full flex justify-between mt-1 items-center border-t-2 border-gray-950">
           <p>{numberTask()}</p>
           <CustomButtonAddAndClear label="Limpar tudo" onClick={handleClearAll} />
         </div>

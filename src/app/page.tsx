@@ -42,12 +42,13 @@ const Page = () => {
 
   return (
     <div className="w-screen h-screen flex justify-center items-center bg-gradient-to-t from-blue-500 to-blue-900">
-      <div className="bg-white p-8 flex flex-col justify-center items-center rounded-xl "  >
-        <h1 className="text-3xl font-bold">Todo App</h1>
+      <div className="bg-white p-8 flex flex-col justify-center items-center rounded-xl
+        max-sm:p-2 
+      "  >
+        <h1 className="text-3xl max-sm:text-lg font-bold">Todo App</h1>
         <div className="w-full flex">
-
           <input
-            className="p-2 flex-1 text-white rounded-md bg-gray-500 my-2"
+            className="p-2 max-sm:p-1 max-sm:text-sm flex-1 text-white rounded-md bg-gray-500 my-2"
             type="text"
             placeholder="Adicionar tarefa"
             value={itemImput}
@@ -70,7 +71,7 @@ const Page = () => {
         </ul>
 
         <div className="w-full flex justify-between mt-1 items-center border-t-2 border-gray-950">
-          <p>{numberTask()}</p>
+          <p className="max-sm:text-sm" >{numberTask()}</p>
           <CustomButtonAddAndClear label="Limpar tudo" onClick={handleClearAll} />
         </div>
       </div>
